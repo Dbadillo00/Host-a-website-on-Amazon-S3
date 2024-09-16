@@ -1,2 +1,4 @@
 # Host a website on Amazon S3
- 
+In this project I used Amazon S3 to host a static website. I set up an S3 bucket in the region closest to me. I then uploaded the index.html file as well as a folder containing all of the images and text for the website to my S3 bucket. After everything was successfully uploaded to my bucket I then went to the properties tab to enable website hosting. After I enabled website hosting I clicked on the endpoint URL that was provided and I received a 403 forbidden error. I received this error message because the objects in my bucket were set to private. To remediate the issue I set the ACL to public and gave the objects public access. After the connection error was resolved I was able to see all of the images and text from the website.
+
+Big thanks to @nextwork for this free AWS Lab
